@@ -10,7 +10,7 @@ Vue.use(Vuex);
 
 const vuexLocal = new VuexPersistence({
   storage: window.localStorage,
-  modules: ["user", "tasks"],
+  modules: ["user", "tasks"]
 });
 
 export default new Vuex.Store({
@@ -19,7 +19,7 @@ export default new Vuex.Store({
   actions: {},
   modules: {
     user,
-    tasks,
+    tasks
   },
-  plugins: [vuexLocal.plugin],
+  plugins: [vuexLocal.plugin]
 });

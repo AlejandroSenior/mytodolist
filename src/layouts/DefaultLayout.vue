@@ -38,7 +38,7 @@ export default {
   name: "DefaultLayout",
   components: { SideBar, AddTaskButton },
   data: () => ({
-    drawer: null,
+    drawer: null
   }),
   methods: {
     toogleDarkMode() {
@@ -47,7 +47,7 @@ export default {
     logout() {
       this.$store.dispatch("user/logout");
       this.$router.push("/login");
-    },
-  },
+    }
+  }
 };
 </script>

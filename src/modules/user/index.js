@@ -1,6 +1,6 @@
 const getDefaultState = () => {
   return {
-    user: {},
+    user: {}
   };
 };
 const state = getDefaultState();
@@ -21,13 +21,13 @@ const actions = {
     // ------ Call auth and logout endpoint ------
     commit("RESET_STATE", null);
     commit("tasks/RESET_STATE", null, { root: true });
-  },
+  }
 };
 
 const getters = {
   getUserId: (state) => {
     return state.user.id;
-  },
+  }
 };
 
 const mutations = {
@@ -37,7 +37,7 @@ const mutations = {
 
   RESET_STATE(state) {
     Object.assign(state, getDefaultState());
-  },
+  }
 };
 
 export default {
@@ -45,5 +45,5 @@ export default {
   state,
   actions,
   getters,
-  mutations,
+  mutations
 };

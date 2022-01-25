@@ -2,7 +2,7 @@ const getDefaultState = () => {
   return {
     tasks: [],
     categories: [],
-    categoryFilter: null,
+    categoryFilter: null
   };
 };
 const state = getDefaultState();
@@ -53,7 +53,7 @@ const actions = {
     // ------ Call endpoint and get task list ------
     const allCategories = await JSON.parse(localStorage.getItem("allCategories"));
     if (allCategories.length > 0) commit("SET_CATEGORIES", allCategories);
-  },
+  }
 };
 
 const getters = {
@@ -63,7 +63,7 @@ const getters = {
 
   getCategories: (state) => {
     return state.categories;
-  },
+  }
 };
 
 const mutations = {
@@ -89,7 +89,7 @@ const mutations = {
 
   RESET_STATE(state) {
     Object.assign(state, getDefaultState());
-  },
+  }
 };
 
 export default {
@@ -97,5 +97,5 @@ export default {
   state,
   actions,
   getters,
-  mutations,
+  mutations
 };

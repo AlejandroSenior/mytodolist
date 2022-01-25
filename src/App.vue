@@ -11,6 +11,6 @@ import ConfigLayout from "./layouts/ConfigLayout.vue";
 
 export default {
   name: "App",
-  components: { ConfigLayout },
+  components: { ConfigLayout }
 };
 </script>

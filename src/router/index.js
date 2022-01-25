@@ -8,22 +8,22 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: () => import("@/views/Home.vue"),
+    component: () => import("@/views/Home.vue")
   },
   {
     path: "/login",
     name: "Login",
     component: () => import("@/views/Login.vue"),
     meta: {
-      layout: "LoginLayout",
-    },
-  },
+      layout: "LoginLayout"
+    }
+  }
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes,
+  routes
 });
 
 router.beforeEach((to, _, next) => {

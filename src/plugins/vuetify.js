@@ -5,17 +5,17 @@ Vue.use(Vuetify);
 
 export default new Vuetify({
   icons: {
-    iconfont: "md",
+    iconfont: "md"
   },
   theme: {
     dark: localStorage.getItem("theme") === "dark",
     themes: {
       light: {
-        secondary: "#f5f5f5",
+        secondary: "#f5f5f5"
       },
       dark: {
-        primary: "#E94C89",
-      },
-    },
-  },
+        primary: "#E94C89"
+      }
+    }
+  }
 });

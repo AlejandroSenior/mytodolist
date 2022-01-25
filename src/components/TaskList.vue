@@ -49,12 +49,12 @@ export default {
     categoryName() {
       const name = this.categoryFilter ? this.categories.find((e) => e.id === this.categoryFilter).name : "All tasks";
       return name;
-    },
+    }
   },
   methods: {
     checkBoxClick(taskId) {
       this.$store.dispatch("tasks/toggleDoneTask", taskId);
-    },
-  },
+    }
+  }
 };
 </script>

@@ -61,8 +61,8 @@ export default {
 
     // New category object
     newCategory: {
-      name: "",
-    },
+      name: ""
+    }
   }),
   computed: {
     userCompleteName() {
@@ -74,7 +74,7 @@ export default {
       const nameInitial = user.name.charAt(0);
       const lastNameInitial = user.lastName.charAt(0);
       return nameInitial + lastNameInitial;
-    },
+    }
   },
   methods: {
     setCategoryFilter(category) {
@@ -86,7 +86,7 @@ export default {
         this.$refs.formCreateCategory.resetValidation();
         this.newCategory = this.$options.data().newCategory;
       }
-    },
-  },
+    }
+  }
 };
 </script>

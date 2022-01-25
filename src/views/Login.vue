@@ -14,7 +14,10 @@
               prepend-icon="mdi-account"
               type="text"
               @keydown.enter="login({ email, password })"
-              :rules="[(v) => /^\w+[\w-.]*@\w+((-\w+)|(\w*))\.[a-z]{2,10}$/.test(v) || 'Enter a valid Email', (v) => !!v || 'Required field']"
+              :rules="[
+                (v) => /^\w+[\w-.]*@\w+((-\w+)|(\w*))\.[a-z]{2,10}$/.test(v) || 'Enter a valid Email',
+                (v) => !!v || 'Required field'
+              ]"
             />
 
             <v-text-field
@@ -45,7 +48,7 @@ export default {
     password: "",
     isLoading: false,
     loginFormValid: false,
-    invalidCredentials: false,
+    invalidCredentials: false
   }),
   methods: {
     async login() {
@@ -56,7 +59,7 @@ export default {
         else this.invalidCredentials = true;
         this.isLoading = false;
       }
-    },
-  },
+    }
+  }
 };
 </script>

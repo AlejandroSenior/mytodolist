@@ -47,11 +47,11 @@ export default {
     newTask: {
       name: "",
       description: "",
-      category: 0,
-    },
+      category: 0
+    }
   }),
   computed: {
-    ...mapState("tasks", ["categories"]),
+    ...mapState("tasks", ["categories"])
   },
   async created() {
     if (this.categories.length === 0) await this.$store.dispatch("tasks/getCategories");
@@ -62,8 +62,8 @@ export default {
         this.$store.dispatch("tasks/addTask", this.newTask);
         this.dialogAddTask = false;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 

@@ -2,18 +2,20 @@ const tasks = [
   {
     id: 1,
     name: "enim sit amet nunc viverra",
-    description: "pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate",
+    description:
+      "pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate",
     userId: 1,
     done: false,
-    category: 2,
+    category: 2
   },
   {
     id: 2,
     name: "vivamus vel nulla eget eros",
-    description: "vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel",
+    description:
+      "vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel",
     userId: 4,
     done: true,
-    category: 1,
+    category: 1
   },
   {
     id: 3,
@@ -21,23 +23,25 @@ const tasks = [
     description: "sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec",
     userId: 3,
     done: false,
-    category: 2,
+    category: 2
   },
   {
     id: 4,
     name: "sed vestibulum sit amet",
-    description: "augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia",
+    description:
+      "augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia",
     userId: 2,
     done: true,
-    category: 1,
+    category: 1
   },
   {
     id: 5,
     name: "gravida sem praesent id massa",
-    description: "libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus",
+    description:
+      "libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus",
     userId: 3,
     done: false,
-    category: 1,
+    category: 1
   },
   {
     id: 6,
@@ -45,7 +49,7 @@ const tasks = [
     description: "non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non",
     userId: 5,
     done: true,
-    category: 1,
+    category: 1
   },
   {
     id: 7,
@@ -53,7 +57,7 @@ const tasks = [
     description: "platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem",
     userId: 5,
     done: true,
-    category: 1,
+    category: 1
   },
   {
     id: 8,
@@ -61,7 +65,7 @@ const tasks = [
     description: "et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus",
     userId: 4,
     done: true,
-    category: 2,
+    category: 2
   },
   {
     id: 9,
@@ -69,15 +73,16 @@ const tasks = [
     description: "urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi",
     userId: 1,
     done: true,
-    category: 1,
+    category: 1
   },
   {
     id: 10,
     name: "cubilia curae duis faucibus",
-    description: "in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla",
+    description:
+      "in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla",
     userId: 3,
     done: true,
-    category: 1,
+    category: 1
   },
   {
     id: 11,
@@ -85,7 +90,7 @@ const tasks = [
     description: "aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt",
     userId: 2,
     done: true,
-    category: 2,
+    category: 2
   },
   {
     id: 12,
@@ -93,7 +98,7 @@ const tasks = [
     description: "vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula",
     userId: 1,
     done: false,
-    category: 1,
+    category: 1
   },
   {
     id: 13,
@@ -101,7 +106,7 @@ const tasks = [
     description: "leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla",
     userId: 5,
     done: false,
-    category: 1,
+    category: 1
   },
   {
     id: 14,
@@ -109,27 +114,28 @@ const tasks = [
     description: "amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus",
     userId: 2,
     done: true,
-    category: 2,
+    category: 2
   },
   {
     id: 15,
     name: "sit amet erat nulla",
-    description: "lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat",
+    description:
+      "lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat",
     userId: 3,
     done: false,
-    category: 1,
-  },
+    category: 1
+  }
 ];
 
 const categories = [
   {
     id: 1,
-    name: "Work",
+    name: "Work"
   },
   {
     id: 2,
-    name: "Home",
-  },
+    name: "Home"
+  }
 ];
 
 export { tasks, categories };
