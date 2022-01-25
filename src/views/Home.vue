@@ -1,18 +1,20 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <task-list :list="tasks" />
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import { mapState } from "vuex";
+import TaskList from "../components/TaskList.vue";
 
 export default {
-  name: "Home",
-  components: {
-    HelloWorld,
+  components: { TaskList },
+  computed: {
+    ...mapState("tasks", ["tasks"]),
+  },
+  async created() {
+    if (this.tasks.length === 0) await this.$store.dispatch("tasks/getUserTasks");
   },
 };
 </script>
+
+<style></style>
